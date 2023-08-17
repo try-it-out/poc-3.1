@@ -1,0 +1,12 @@
+on:
+  pull_request:
+    types: [synchronize, opened]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: We build
+      id: buildbuild
+      run: |
+        echo "We building yo"
